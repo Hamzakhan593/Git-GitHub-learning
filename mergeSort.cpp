@@ -40,7 +40,7 @@ while(r < rightArraySize){
     r++;
 }
  }*/
-
+// hamza khan
 void merge(int arr[], int leftIndex, int midIndex, int rightIndex){
     int l = leftIndex;
     int r = midIndex + 1;
