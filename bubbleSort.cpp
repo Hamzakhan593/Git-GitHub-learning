@@ -5,13 +5,16 @@ using namespace std;
 
 void bubbleSort(vector<int>& sort){
     int n = sort.size();
+    bool flag = false;
     for(int i = 0; i < sort.size(); i++){
-
-        for(int j = 0; j < sort.size() - 2; j++){
-
-            if(sort[j] > sort[j+1]){
+    for(int j = 0; j < sort.size() -i-1; j++){
+               if(sort[j] > sort[j+1]){
+                flag = true;
                 swap(sort[j], sort[j+1]);
             }
+        }
+        if(flag == false){
+            break;
         }
     }
 }
